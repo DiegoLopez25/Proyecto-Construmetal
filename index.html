@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menú animado</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- Ir arriba -->
+    <div class="go-top">
+        <span><i class="fas fa-angle-up"></i></span>
+    </div>
+    
+    <!-- ======= Top Bar ======= -->
+    <div id="topbar">
+      <section class="d-none d-lg-block">
+        <div class="container d-flex">
+          <div class="contact-info mr-auto">
+            <ul>
+              <li><i class="fas fa-envelope"></i>contact@example.com</li>
+              <li><i class="fas fa-phone"></i> +1 5589 55488 55</li>
+              <li><i class="far fa-clock"></i> Mon-Fri 9am - 5pm</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  
+    <!-- Menu de navegacion -->
+     <header id="header">
+      <nav class="menu">
+        <div class="logo-box">
+            <img src="img/logotipo1.jpg" class="logo-img">
+            <span class="btn-menu"><i class="fas fa-bars"></i></span>
+        </div>
+
+        <div class="list-container">
+            <ul class="lists">
+                <li><a href="#" class="activo">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">contactanos</a></li>
+            </ul>
+        </div>
+      </nav>
+
+      <!-- IMG Header -->
+      <div class="img-header">
+          <div class="welcome">
+              <h1>Bienvenidos a Construmetal</h1>
+              <hr>
+              <p>fabricantes directos con amplio stock en nuestros productos y servicios</p>
+              <button id="abajo">nosotros</button>
+          </div>
+      </div>
+     </header>
+
+    <!-- Menu de navegacion -->
+
+  <main>
+
+    <!-- Acerca de nosotros -->
+    <section class="acerca-de">
+
+        <div class="info-container">
+            <h1>Acerca de Nosotros</h1>
+            <p>Aenean a vehicula enim. Donec eget consectetur ipsum, ut mattis elit. Donec molestie commodo vehicula. In ultrices risus justo, sit amet cursus velit congue vel. Pellentesque sed leo fermentum, viverra felis in, euismod lorem. Fusce sed urna vitae est eleifend interdum. Praesent ullamcorper odio a ex lobortis, non sodales mi tempor. Praesent mattis non diam quis sagittis. Fusce ac nunc tellus. Nulla malesuada metus massa, et ullamcorper ipsum ultrices ut.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel quam sed ligula sodales viverra et vehicula arcu. Proin ante orci, consectetur ac feugiat id, sollicitudin at lacus. Ut sollicitudin ipsum ex, id dictum velit faucibus sit amet. Proin sagittis sodales nunc. Suspendisse elementum, ligula ut porta vulputate, urna nunc mollis diam, in tincidunt mauris urna nec ligula. Ut id ultrices diam, sit amet sodales felis. Pellentesque interdum neque tellus, id congue nibh tincidunt at.</p>
+        
+            <div class="about-gallery">
+                <img src="img/hombre-trabajando.jpg" alt="">
+                <img src="img/theme-1.jpg" alt="">
+                <img src="img/tabla-roca.jpg" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Nuestros Proyectos -->
+    <section class="our-projects">
+
+     
+        <div class="deg-background"></div>
+
+        <div class="ejeZproject">
+           <div class="container-project">
+
+              <div class="project-title">
+                  <h2>Nuestros Proyectos</h2>
+                  <hr>
+              </div>
+
+              <div class="project-img">
+                  <img src="img/theme-1.jpg" alt="">
+                  <img src="img/theme-2.jpg" alt="">
+                  <img src="img/theme-3.jpg" alt="">
+                  <img src="img/theme-4.jpg" alt="">
+                  <img src="img/theme-5.jpg" alt="">
+                  <img src="img/theme-6.jpg" alt="">
+                  <img src="img/theme-7.jpg" alt="">
+                  <img src="img/theme-8.jpg" alt="">
+                  <img src="img/theme-9.jpg" alt="">
+              </div>
+
+           </div> 
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="deg-footer"></div>
+    <div class="ejeZfooter">
+      <div class="footer-content">
+      <div class="footer-title">
+          <h2>Formulario de Contacto</h2>
+          <hr>
+      </div>
+      <div class="formulario-content">
+       <form id="formulario">
+         <label for="user">Nombre:</label>
+         <input type="text" id="user" name="user" placeholder="Ingresa tu nombre">
+
+         <label for="email">Correo Electronico:</label>
+         <input type="email" id="email" name="email" placeholder="Ingresa tu Correo Electronico">
+
+         <label for="mensaje">Escribe tu mensaje:</label>
+         <textarea name="mensaje" id="mensaje"></textarea>
+
+         <div class="send"><button>Enviar</button></div>
+
+         <div class="mensaje-form">
+             <p>Escribenos un mensaje, con gusto tendras una respuesta de parte de nosotros en muy poco tiempo.</p>
+         </div>
+       </form>
+      </div>
+        <br>
+        <br> 
+      <div class="footer-text">
+          <p>&copy; Construmetal - 2020</p>
+      </div>
+      </div>
+    </div>
+
+</footer>
+
+<!-- Scripts -->
+<script src="assets/jquery/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/fontawesome/js/fontawesome.min.js"></script>
+<script src="main.js" type="text/javascript"></script>
+
+</body>
+
+</html>

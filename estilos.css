@@ -1,0 +1,573 @@
+﻿:root{
+
+    --black:#252a34;
+    --blue:#08d9d6;
+    --white:#eaeaea;
+    --blueB:#062699;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+    overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*boton flecha hacia arriba*/
+.go-top{
+    position: fixed;
+    bottom: 100px;
+    right: -100%;
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--blueB);
+    background: #fff;
+    z-index: 9999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.go-top:hover{
+    border:2px solid var(--white);
+    background:var(--blueB);
+}
+.go-top:hover span{
+    color:var(--white);
+}
+.go-top > span{
+    font-size: 30px;
+    color:var(--black);
+}
+
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+#topbar {
+    background: #39312f;
+    font-size: 14px;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+#topbar .contact-info ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  #topbar .contact-info li {
+    display: inline-block;
+    padding: 8px 0;
+  }
+  
+  #topbar .contact-info li + li {
+    margin-left: 18px;
+  }
+  
+  #topbar .contact-info a {
+    color: rgba(255, 255, 255, 0.8);
+    transition: 0.3s;
+  }
+  
+  #topbar .contact-info a:hover {
+    color: #fff;
+  }
+  
+  #topbar .contact-info i {
+    color: #fff;
+    padding-right: 4px;
+  }
+  
+  #topbar .cta a {
+    color: #fff;
+    padding: 8px 20px;
+    display: inline-block;
+    transition: 0.3s;
+  }
+
+
+/** Menu de Navegacion **/
+#header{
+    position: relative;
+    width: 100%;
+}
+.menu{
+    position:fixed;
+    top: 0;/*AQUI 36*/
+    left: 0;
+    width: 100%;
+    height: 75px;
+    background: var(--blueB);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+
+.logo-img{
+    width: 320px
+}
+
+.menu .list-container{
+    margin-right: 20px;
+}
+.menu .list-container .lists{
+    display: flex;
+}
+.menu .list-container .lists li {
+    list-style: none;
+}
+.menu .list-container .lists li a{
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 8px;
+    color: var(--white);
+    border-radius: 24px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.menu .list-container .lists li a.activo{
+    background:#fff;
+    color: black;
+}
+.menu .list-container .lists li a:hover{
+    background: #fff;
+    color: black;
+}
+
+.btn-menu > .fa-bars{
+    display: none;
+}
+
+/** Menu de Navegacion **/
+
+/** IMG Header **/
+.img-header{
+    position: relative;
+    top: 0px;/*aqui*/
+    width: 100%;
+    height: 100vh;
+    background: url(img/man-working-person-music-building-male-796609-pxhere.com.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.img-header .welcome{
+    position: absolute;
+     top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-header .welcome h1{
+    font-size: 50px;
+    color: white;
+    font-weight:600;
+}
+.img-header .welcome hr{
+    width: 400px;
+    height: 2px;
+    background: white;
+    border: none;
+    margin-top: 5px;
+}
+
+.img-header .welcome p{
+    font-size: 20px;
+    color:#fff;
+    margin-top: 20px;
+}
+
+.img-header .welcome > button{
+    width: 170px;
+    height: 40px;
+    background: var(--blueB);
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.img-header .welcome > button:hover{
+    background: var(--white);
+    color: var(--blueB);
+}
+/** IMG Header **/
+
+/** Acerca de Nosotros **/
+.acerca-de{
+    width: 100%;
+    margin-top: 120px;
+}
+.acerca-de .info-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.acerca-de .info-container h1{
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.acerca-de .info-container p{
+    text-align: center;
+    font-size: 17px;
+    color: var(--black);
+    line-height: 35px;
+    margin: 10px 0px;
+}
+.acerca-de .info-container .about-gallery{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+}
+.acerca-de .info-container .about-gallery img{
+    width: calc(33.33% - 10px);
+    height: 350px;
+    object-fit: cover;
+    margin:10px 10px;
+    border-radius: 10px;
+    cursor: pointer;    
+}
+.acerca-de .info-container .about-more{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+.acerca-de .info-container .about-more button{
+    width: 120px;
+    height: 40px;
+    background: var(--blueB);
+    border-radius: 24px;
+    border:none;
+    outline: none;
+    font-size: 22px;
+    color:#fff;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 1.5s;
+}
+/** Acerca de Nosotros **/
+
+/** Nuestros proyectos **/
+.our-projects{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:cover; 
+    margin-top: 100px;
+}
+.our-projects .deg-background{
+    position:absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+}
+.our-projects .ejeZproject{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.our-projects .container-project{
+    width: 90%;
+    margin:auto;
+    padding-top: 100px;
+}
+.our-projects .container-project .project-title{
+    border:2px solid #fff;
+    padding:10px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+.our-projects .container-project .project-title h2{
+   font-size: 40px;
+   color: #fff;
+   font-weight: normal;
+}
+.our-projects .container-project .project-title hr{
+    background: #fff;
+    width: 50%;
+    margin:10px auto;
+}
+.our-projects .container-project .project-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    padding-bottom: 100px;
+}
+.our-projects .container-project .project-img img{
+    width: calc(30% - 10px);
+    margin: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer; 
+}
+/** Nuestros proyectos **/
+
+/** Footer **/
+.footer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+ /*   background: url(../img/footer.jpg);*/
+    color: gray;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.footer .deg-footer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+.footer .ejeZfooter{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.footer .footer-content{
+    width: 90%;
+    padding-top:100px;
+    margin:auto;
+}
+.footer .footer-content .footer-title{
+    width: 50%;
+    margin:auto;
+    border:2px solid #fff;
+    padding: 15px;
+}
+.footer .footer-content .footer-title h2{
+    text-align: center;
+    color:#fff;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.footer .footer-content .footer-title hr{
+    width: 80%;
+    margin:auto;
+}
+.footer .footer-content .formulario-content{
+    width: 60%;
+    background: #fff;
+    border-radius: 24px;
+    border:2px solid var(--blueB);
+    margin: 50px auto;
+    padding:30px;
+    margin-bottom: 150px;
+}
+.footer .footer-content .formulario-content #formulario{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer .footer-content .formulario-content #formulario label{
+    text-align: center;
+    color:var(--black);
+    font-size:22px;
+    margin:30px 0px 10px 0px;
+}
+.footer .footer-content .formulario-content #formulario input{
+    width: 90%;
+    height: 40px;
+    margin:auto;
+    border:2px solid var(--blueB);
+    border-radius:24px;
+    outline: none;
+    text-align: center;
+    font-size: 17px;
+    color:var(--black);
+}
+.footer .footer-content .formulario-content #formulario textarea{
+    width: 90%;
+    height: 200px;
+    margin:auto;
+    border:2px solid var(--blueB);
+    border-radius:24px;
+    outline: none;
+    font-size: 15px;
+    color:var(--black);
+    padding:20px;
+}
+.footer .footer-content .formulario-content #formulario .send{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px;
+}
+.footer .footer-content .formulario-content #formulario .send button{
+    width: 150px;
+    height: 40px;
+    background: var(--blueB);
+    border-radius: 24px;
+    border:none;
+    outline: none;
+    font-size: 22px;
+    color:#fff;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.footer .footer-content .formulario-content #formulario .send button:hover{
+    background: var(--blueB);
+}
+.footer .footer-content .footer-text{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background:rgba(0,0,0,0.8);
+    border-top: 5px solid #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .footer-content .footer-text p{
+    color:#fff;
+    font-size: 20px;
+}
+
+/** Footer **/
+
+/** Media Query **/
+
+@media only screen and (max-width:900px){
+    .btn-menu > .fa-bars{
+        display: block;
+        position:absolute;
+        top:20px;
+        right: 30px;
+        font-size:28px;
+        cursor: pointer;
+        color: white;
+    }
+    
+    .btn-menu > .fa-times{color:white;}
+    .menu .list-container{
+        position:absolute;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background: #fff;
+    }
+    .menu .list-container .lists{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-top:5px solid var(--blueB);
+    }
+    .menu .list-container .lists li{
+        width: 90%;
+        margin:10px 0px;
+        border-bottom: 1px solid var(--blueB);
+        text-align: center;
+    }
+    .menu .list-container .lists li a{
+      font-size:20px;
+      color:var(--blueB);
+    }
+    .menu .list-container .lists li a.activo{
+        background:none;
+        color:#FE0000;
+    }
+    .menu .list-container .lists li a:hover{
+        background:none;
+        color:#FE0000;
+    }
+}
+
+@media only screen and (max-width: 773px) {
+   
+    /** IMG Header**/
+    .img-header .welcome h1{
+        font-size: 40px;
+    }
+    .img-header .welcome > button {
+        width: 130px;
+        font-size: 20px;
+    } 
+
+    /** Acerca de nosotros **/
+    .acerca-de .info-container .about-gallery{
+        flex-direction: column;
+    }
+    .acerca-de .info-container .about-gallery img{
+        width: 100%;
+    }
+
+    /** Nuestros proyectos **/
+    .our-projects .container-project .project-img img{
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 590px) {
+   
+    /** IMG Header **/
+.img-header .welcome h1{
+    font-size:30px;
+    text-align: center;
+}
+.img-header .welcome hr{
+    width: 300px;
+}
+.img-header .welcome p{
+    font-size: 17px;
+}
+.img-header .welcome > button {
+    width: 100px;
+    font-size: 17px;
+}
+}
+
+@media only screen and (max-width:900px){
+    .footer .formulario-content{width: 85%; padding:20px;}
+    .footer .formulario-content #formulario input{width: 100%;}
+    .footer .formulario-content #formulario textarea{width: 100%;}
+}
