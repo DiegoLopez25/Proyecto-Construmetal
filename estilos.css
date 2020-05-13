@@ -105,7 +105,7 @@ body{
     top: 0;/*AQUI 36*/
     left: 0;
     width: 100%;
-    height: 75px;
+    height: 80px;
     background: var(--blueB);
 
     display: flex;
