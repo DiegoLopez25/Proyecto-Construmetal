@@ -62,8 +62,7 @@ window.onscroll = () => {
       containerMenu.style.transition = "0.5s";
 
    }else{
-
-      containerMenu.style.top = "-80px";
+      containerMenu.style.top = "0";
       containerMenu.style.transition = "0.5s";
    }
 
@@ -114,3 +113,13 @@ verAbajo.addEventListener('click', () => {
    }, 1500);
 });
 
+//efecto que conduce a cada seccion
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+   anchor.addEventListener('click', function (e) {
+       e.preventDefault();
+
+       document.querySelector(this.getAttribute('href')).scrollIntoView({
+           behavior: 'smooth'
+       });
+   });
+});
